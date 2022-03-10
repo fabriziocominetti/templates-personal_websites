@@ -1,0 +1,20 @@
+title: <p align="center"> Name Surname </p>
+
+logo: "/images/picture.png?raw=true"
+
+description:
+  <p align="center">
+  <a href="pdf/resume.pdf">Resume</a> |
+  <a href="https://www.linkedin.com/in/x/">LinkedIn</a> |
+  <a href="https://github.com/x">GitHub</a>
+  </p>
+  
+  <p align="justify">
+  Basic personal description
+  <br><br>
+  Basic personal description
+  <br><br>
+  </p>
+  
+theme: jekyll-theme-minimal
+google_analytics: x # Google Analytics tracking ID

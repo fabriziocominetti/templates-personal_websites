@@ -1,0 +1,294 @@
+:root {
+  --bg-color: #121212;
+  --color-gold: #d3a537;
+  --color-dull-white: #ddd;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--color-dull-white);
+  font-size: 16px;
+  font-family: monospace;
+}
+
+h2 {
+  color: white;
+  font-size: 25px;
+}
+
+p {
+  color: white;
+}
+
+i {
+  color: white;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 0.5rem;
+}
+
+.container .heading {
+  color: var(--color-gold);
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.containerUni {
+  border: 2px solid #dad9d9;
+  background-color: #545650;
+  border-radius: 5px;
+  padding: 16px;
+  width: 70%;
+  margin-top: 2%;
+  margin-left: 15%;
+}
+
+.containerUni::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.containerUni img {
+  float: left;
+  margin-right: 25px;
+  border-radius: 5%;
+}
+
+.containerUni span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .containerUni {
+      text-align: center;
+  }
+  .containerUni img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+
+/* skills section */
+.skills-section {
+  padding-top: 20px;
+}
+
+.skills-header {
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+}
+
+.skills-header:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: #d3a537;
+  border-radius: 2px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+
+.skills-box {
+  padding: 1rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.skills-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.skills-title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 4px;
+  border-radius: 2px 0 0 2px;
+  background-color: #d3a537;
+  transition: 0.5s;
+}
+
+.skills-title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: 4px;
+  border-radius: 0 2px 2px 0;
+  background-color: #d3a537;
+}
+
+.skills-icons {
+  width: 50px;
+  z-index: 2;
+}
+
+.skills-img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 45px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.skills-title h3 {
+  color: #fff;
+  margin-top: 0.5rem;
+}
+@media screen and (max-width: 990px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .skills-container {
+    grid-template-columns: 2fr;
+    padding: 2rem 50px;
+  }
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  margin-left: 4%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  border: 1px solid #dad9d9;
+  border-radius: 5px;
+  background-color: #545650;
+  text-align: center;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card-media {
+	margin: 0;
+}
+.card-media > img {
+	max-width: 100%;
+  border-radius: 5px;
+}
+.card-actions {
+	display: flex;
+	box-sizing: border-box;
+	align-items: center;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 90%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* footer */
+
+#footer {
+  height: 3.75em;
+  bottom: 0;
+  width: 90%;
+  max-width: 1040px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+#footer a {
+  color: var(--color-dull-white);
+}
+
+#footer a:hover {
+  color: var(--color-gold);
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  font-size: 0.75em;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrap {
+  font-size: 1.5em;
+}
+
+.social-icons a {
+  padding-right: 0.875em;
+  opacity: 0.85;
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .project-description {
+    width: 100%;
+  }
+
+  #footer {
+    font-size: 14px;
+  }
+}
